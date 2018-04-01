@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = u'Justin Swaney'
 SITENAME = u'Justin Swaney'
-SITEURL = ''
+SITEURL = 'http://localhost:8000'
 
 PATH = 'content'
 
@@ -24,8 +24,8 @@ LINKS = (('Chung Lab Website', 'http://www.chunglab.org/'),
          ('Chung Lab Github', 'https://github.com/chunglabmit'),)
 
 # Social widget
-SOCIAL = (('Twitter', 'https://twitter.com/justinmswaney?lang=en'),
-          ('Facebook', 'https://www.facebook.com/jswaney2'),)
+SOCIAL = (('Twitter', 'https://twitter.com/justinmswaney?lang=en', 'twitter'),
+          ('Facebook', 'https://www.facebook.com/jswaney2', 'facebook-f'),)
 
 DEFAULT_PAGINATION = 10
 
@@ -35,8 +35,43 @@ DEFAULT_PAGINATION = 10
 # For pelican-bootstrap3
 THEME = 'C:/Users/Justin/pelican-themes/pelican-bootstrap3'
 JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
+BOOTSTRAP_THEME = 'flatly'
+# BOOTSTRAP_FLUID = True # Not sure what the container-fluid is
 
-# For the translations
+# Load plugins
 PLUGIN_PATHS = ['C:/Users/Justin/pelican-plugins']
-PLUGINS = ['i18n_subsites']
+PLUGINS = ['i18n_subsites',
+		   'related_posts',
+		   'disqus_static',]
 I18N_TEMPLATES_LANG = 'en'
+
+# Add site logo and favicon
+# SITELOGO = 'images/my_site_logo.png'
+# SITELOGO_SIZE = 128
+HIDE_SITENAME = False
+# FAVICON = 'images/favicon.png'
+
+# Banner image
+# BANNER = '/path/to/banner.png'
+# BANNER_SUBTITLE = 'This is my subtitle'
+
+# Sidebar
+HIDE_SIDEBAR = True
+
+# License
+# CC_LICENSE = "CC-BY-NC"
+
+# AddThis sharing
+ADDTHIS_PROFILE = 'ra-5ac0f7e62eb46c7e'
+
+# Twitter card previews
+TWITTER_CARDS = True
+
+# Comments
+DISQUS_SITENAME = u'jmswaney-github-io'
+DISQUS_SECRET_KEY = u'vjASi0O1T30UrdohjeMobrjrsGXNihetP40yX9n59pHyVmpgS7t7G3KwWR5L9Osc'
+DISQUS_PUBLIC_KEY = u'QGYOWjWq14FG49UwGs8TTZgp2IuSmTCEVVxTz1A5s5BySE6R29c6ZOwo5nsbW0cK'
+
+DISQUS_NO_ID = True # Prevent possible loss of comments when switching themes
+DISQUS_ID_PREFIX_SLUG = True # avoid comment clash on same slugs
+# :comments: enabled on page metadata can also allow comments on a page

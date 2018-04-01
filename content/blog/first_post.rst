@@ -4,7 +4,6 @@ Initial Commit
 :date: 2018-04-01 01:09
 :modified: 2018-04-01 01:09
 :tags: first, initial
-:category: general
 :slug: initial-commit
 :authors: Justin Swaney
 :summary: Greetings! This post summarizes what you may find on this website
