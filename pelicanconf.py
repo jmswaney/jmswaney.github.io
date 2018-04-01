@@ -40,7 +40,7 @@ BOOTSTRAP_THEME = 'flatly'
 # BOOTSTRAP_FLUID = True # Not sure what the container-fluid is
 
 # Load plugins
-PLUGIN_PATHS = ['C:/Users/Justin/pelican-plugins']
+PLUGIN_PATHS = ['C:/Users/Justin/pelican-plugins'] #.env
 PLUGINS = ['i18n_subsites',
 		   'related_posts',
 		   'disqus_static',]
@@ -53,7 +53,7 @@ HIDE_SITENAME = False
 # FAVICON = 'images/favicon.png'
 
 # Banner image
-# BANNER = '/path/to/banner.png'
+BANNER = 'C:/Users/Justin/Documents/GitHub/jmswaney.github.io/content/images/switch.jpg' #.env
 # BANNER_SUBTITLE = 'This is my subtitle'
 
 # Sidebar
@@ -70,6 +70,7 @@ TWITTER_CARDS = True
 
 # Comments
 DISQUS_SITENAME = u'jmswaney-github-io'
+# Need to move this to .env file
 DISQUS_SECRET_KEY = u'vjASi0O1T30UrdohjeMobrjrsGXNihetP40yX9n59pHyVmpgS7t7G3KwWR5L9Osc'
 DISQUS_PUBLIC_KEY = u'QGYOWjWq14FG49UwGs8TTZgp2IuSmTCEVVxTz1A5s5BySE6R29c6ZOwo5nsbW0cK'
 
