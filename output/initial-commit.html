@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="english" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
 <head>
-    <title>Categories - Justin Swaney</title>
+    <title>Initial Commit - Justin Swaney</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -9,15 +9,22 @@
 
 
 
+<link rel="canonical" href="/initial-commit.html">
 
         <meta name="author" content="Justin Swaney" />
+        <meta name="keywords" content="first,initial" />
+        <meta name="description" content="Greetings! This post summarizes what you may find on this website" />
 
-    <!-- Open Graph tags -->
         <meta property="og:site_name" content="Justin Swaney" />
-        <meta property="og:type" content="website"/>
-        <meta property="og:title" content="Justin Swaney"/>
-        <meta property="og:url" content=""/>
-        <meta property="og:description" content="Justin Swaney"/>
+        <meta property="og:type" content="article"/>
+        <meta property="og:title" content="Initial Commit"/>
+        <meta property="og:url" content="/initial-commit.html"/>
+        <meta property="og:description" content="Greetings! This post summarizes what you may find on this website"/>
+        <meta property="article:published_time" content="2018-04-01" />
+            <meta property="article:section" content="general" />
+            <meta property="article:tag" content="first" />
+            <meta property="article:tag" content="initial" />
+            <meta property="article:author" content="Justin Swaney" />
 
 
 
@@ -52,7 +59,7 @@ Justin Swaney            </a>
                          <li><a href="/pages/about.html">
                              About
                           </a></li>
-                        <li >
+                        <li class="active">
                             <a href="/category/general.html">General</a>
                         </li>
             </ul>
@@ -67,24 +74,57 @@ Justin Swaney            </a>
 <div class="container">
     <div class="row">
         <div class="col-sm-9">
-    <section id="categories">
-      <h1>All Categories for Justin Swaney</h1>
-        <div class="panel-group" id="accordion">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-general">general <span class="badge pull-right">1</span></a>
-                    </h4>
-                </div>
-                <div id="collapse-general" class="panel-collapse collapse">
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    <a href="/initial-commit.html"
+                       rel="bookmark"
+                       title="Permalink to Initial Commit">
+                        Initial Commit
+                    </a>
+                </h1>
+            </header>
+            <div class="entry-content">
+                <div class="panel">
                     <div class="panel-body">
-                        <p><span class="categories-timestamp"><time datetime="2018-04-01T01:09:00-04:00">Sun 01 April 2018</time></span> <a href="/initial-commit.html">Initial Commit</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
+<footer class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2018-04-01T01:09:00-04:00"> Sun 01 April 2018</time>
+    </span>
 
+
+
+
+
+<span class="label label-default">Tags</span>
+	<a href="/tag/first.html">first</a>
+        /
+	<a href="/tag/initial.html">initial</a>
+    
+</footer><!-- /.post-info -->                    </div>
+                </div>
+                <p>I created this website using Github Pages today to serve as a sort of blog / professional portfolio. In addition to some links and contact info, you may find more detailed posts about the minutiae of some projects that I've been involved with.</p>
+<p>These more detailed posts may include step-by-step walkthroughs or progress updates with open-ended future work. If I find that I'm rambling too much, I may create a page dedicated to distilling down the more <em>stream-of-consciousness</em> posts.</p>
+<div class="section" id="two-photon-stereolithography">
+<h2>Two-photon Stereolithography</h2>
+<p>During my PhD work at MIT, I built a custom 3D printer for fabricating biocompatible microfluidics. I was fortunate enough to have an expensive Ti:Sapphire laser at my disposal, and two-photon stereolithography (2p SLA) offered better resolution than traditional UV curing-based printing technologies. I'd like to share my approach as well as it's limitations at some point.</p>
+</div>
+<div class="section" id="d-biological-image-analysis-in-intact-tissues">
+<h2>3D Biological Image Analysis in Intact Tissues</h2>
+<p>I built the aforementioned 2p SLA printer to give brain organoids a synthetic vascular system. In order to compare avasclular and vascularized brain organoids, I had (and still have) many questions. Many of these questions could be answered after labeling the brain organoids for specific proteins and imaging with confocal microscopy. My lab actually pioneers new clearing technologies like CLARITY, so we do these staining and imaging steps all in 3D with cleared tissues. After imaging, we just have some pretty images, so we're often faced with non-trivial image processing tasks. In the case of a whole mouse brain, these 3D images can be upwards of 1TB, so sometimes the data doesn't even fit into memory. There will be many posts about how we deal with these sorts of challenges.</p>
+</div>
+<div class="section" id="machine-learning-tips-and-tricks">
+<h2>Machine Learning Tips and Tricks</h2>
+<p>I leave this here as a sort of wildcard for cool tid-bits that I've learned after hours and hours of digging for answers on Github / Stack Overflow / actual libraries. Many of the specific problems encountered during my research touch upon boarder topics in programming, machine learning, and computer vision. I'll inevitably feel like I did these topics a huge injustice if I don't address them more completely.</p>
+</div>
+
+            </div>
+            <!-- /.entry-content -->
+        </article>
     </section>
+
         </div>
         <div class="col-sm-3" id="sidebar">
             <aside>

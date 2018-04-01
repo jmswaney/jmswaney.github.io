@@ -1,4 +1,4 @@
 About
 ##############
 
-This is an example about page.
+My name is Justin Swaney, and I'm a Chemical Engineering PhD candidate in the Kwanghun Chung Lab at MIT.
