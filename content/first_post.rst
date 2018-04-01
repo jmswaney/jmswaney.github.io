@@ -23,4 +23,4 @@ I built the aforementioned 2p SLA printer to give brain organoids a synthetic va
 
 Machine Learning Tips and Tricks
 ********************************
-I leave this here as a sort of wildcard for cool tid-bits that I've learned after hours and hours of digging for answers on Github / Stack Overflow / actual libraries. Many of the specific problems encountered during my research touch upon boarder topics in programming, machine learning, and computer vision. I'll inevitably feel like I did these topics a huge injustice if I don't address them more completely.
+I leave this here as a sort of wildcard for cool tid-bits that I've learned after hours and hours of digging for answers on Github / Stack Overflow / actual libraries. Many of the specific problems encountered during my research touch upon broader topics in programming, machine learning, and computer vision. I'll inevitably feel like I did these topics a huge injustice if I don't address them more completely.
