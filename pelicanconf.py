@@ -80,6 +80,7 @@ ADDTHIS_PROFILE = 'ra-5ac0f7e62eb46c7e'
 
 # Twitter card previews
 TWITTER_CARDS = True
+USE_OPEN_GRAPH = True
 
 # Comments
 DISQUS_SITENAME = u'jmswaney-github-io'

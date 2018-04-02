@@ -4,6 +4,7 @@ Neural Organoids: a New Platform for Human Brain Research
 :date: 2018-04-02 09:19
 :modified: 2018-04-02 09:19
 :tags: brain, organoid, vascular
+:og_image: images/hela_cells.jpg
 :slug: organoid-intro
 :authors: Justin Swaney
 :summary: Neural organoids are a new biological model for the human brain
