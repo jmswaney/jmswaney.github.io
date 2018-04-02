@@ -15,7 +15,7 @@ Neural Organoids are Mini-Brains Grown *In Vitro*
 Neural organoids are a new biological model for the developing human brain. You can think of them as mini-brains grown in a dish. To make these mini brains, we take induced pluripotent stem cells (iPSCs), form them into spheres called embryoid bodies, and then culture them in special media to encourage differentiation into neural progenitor cells and neurons. After a month or two of being cultured in a spinning bioreactor, neural organoids can grow to about 3 mm in diameter with multiple regions resembling the developing human brain.
 
 
-.. figure:: ../images/lancaster_protocol.png
+.. figure:: images/lancaster_protocol.PNG
 	:figwidth: 90 %
 	:align: center
 	:alt: neural-organoid-protocol
@@ -28,7 +28,7 @@ Neural organoids are a new biological model for the developing human brain. You 
 
 An interesting property of organoids is that they are patient specific. We can take cells from a patient, reprogram them into iPSCs, and then create our organoids from those patient-derived cells. This personalized feedback creates therapeutic potential for disease modeling, drug testing, and—maybe not in the case of the brain—organ replacement.
 
-.. figure:: ../images/lancaster_personalized_medicine.png
+.. figure:: images/lancaster_personalized_medicine.PNG
 	:figwidth: 70 %
 	:align: center
 	:alt: organoid-personalized-medicine
@@ -47,7 +47,7 @@ Neural Organoids are an Imperfect Model
 
 One major limitation of neural organoids is that they do not develop their own vascular system. Without any vascular system, nutrients are forced to diffuse in from the organoid surface. At the same time, cells are consuming these nutrients. Recent literature shows that apoptosis increases dramatically 250um from the organoid surface, suggesting that there is inadequate transport of some limiting nutrient. The impact that these nutrient gradients and regions of apoptosis have on the ability of neural organoids to recapitulate higher-order brain functions is not well understood.
 
-.. figure:: ../images/raja_cell_death.png
+.. figure:: images/raja_cell_death.PNG
 	:figwidth: 90 %
 	:align: center
 	:alt: organoid-cc3-apoptosis
@@ -65,7 +65,7 @@ These transport problems do not exist in vivo. In the human brain, the vascular 
 The tissue engineering community has developed many approaches to *in vitro* vascularization—I'll just summarize two recent ones. First, Jennifer Lewis’ group at Harvard is currently using 3D bio-printing to create vasculature. They extrude cell-laden inks to create vascular molds and then flow in endothelial cell to create blood vessels. However, the resulting blood vessels are about 650um wide. The other approach called Extravasation is from Roger Kamm’s group at MIT. Extravasation relies on the ability to endothelial cells to form blood vessels naturally under flow conditions. However, there is little control over the resulting network geometry and patterning.
 
 
-.. figure:: ../images/vascularization_techniques.png
+.. figure:: images/vascularization_techniques.PNG
 	:figwidth: 100 %
 	:align: center
 	:alt: vascularization-techniques
