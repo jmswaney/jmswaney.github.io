@@ -63,7 +63,7 @@ FAVICON = 'images/neuron_icon.png'
 
 # Banner image - currently overridden by home.rst
 BANNER = 'images/hela_cells.jpg'
-BANNER_SUBTITLE = 'Scientist, Developer, Engineer (in no particular order)'
+BANNER_SUBTITLE = 'Scientist, Developer, Engineer'
 
 # Sidebar
 HIDE_SIDEBAR = True
