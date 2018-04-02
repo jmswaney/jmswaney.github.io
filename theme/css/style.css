@@ -196,8 +196,8 @@ figure.floatcenter, .align-center {
     color: #fff;
     font-family: "HelveticaNeue-CondensedBold","Helvetica Neue CE 600 Condensed","Helvetica Neue LT Condensed","Helvetica Neue 600 Condensed","HelveticaNeue-BoldCondensed","Helvetica Neue BoldCondensed","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 60px;
-    font-stretch: condensed;
-    font-weight: 700;
+    /*font-stretch: condensed;*/
+    font-weight: 200;
     line-height: 0.9;
     margin: 0;
     text-transform: uppercase;
