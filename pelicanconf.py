@@ -5,7 +5,7 @@ from __future__ import unicode_literals
 AUTHOR = u'Justin Swaney'
 SITENAME = u'Justin Swaney'
 SITEURL = 'https://jmswaney.github.io'
-RELATIVE_URLS = False # Only True when developing on localhost
+RELATIVE_URLS = True # Only True when developing on localhost
 
 PATH = 'content'
 
@@ -52,7 +52,10 @@ BOOTSTRAP_FLUID = False # Not sure what the container-fluid is
 PLUGIN_PATHS = ['C:/Users/Justin/pelican-plugins']
 PLUGINS = ['i18n_subsites',
 		   'related_posts',
-		   'disqus_static',]
+		   'disqus_static',
+		   'pelican_youtube',
+		   'liquid_tags.include_code',
+		   'liquid_tags.notebook',]
 I18N_TEMPLATES_LANG = 'en'
 
 # Add site logo and favicon
@@ -60,6 +63,7 @@ SITELOGO = 'images/neuron_icon.png'
 SITELOGO_SIZE = 30
 HIDE_SITENAME = True
 FAVICON = 'images/neuron_icon.png'
+OPEN_GRAPH_IMAGE = 'images/hela_cells.jpg'
 
 # Banner image - currently overridden by home.rst
 BANNER = 'images/hela_cells.jpg'
