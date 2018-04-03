@@ -83,9 +83,9 @@ USE_OPEN_GRAPH = True
 
 # Sometimes the Disqus server goes down and this will throw some cryptic JSONDecodeError
 # Comments
-DISQUS_SITENAME = u'jmswaney-github-io'
-DISQUS_SECRET_KEY = u'vjASi0O1T30UrdohjeMobrjrsGXNihetP40yX9n59pHyVmpgS7t7G3KwWR5L9Osc'
-DISQUS_PUBLIC_KEY = r'QGYOWjWq14FG49UwGs8TTZgp2IuSmTCEVVxTz1A5s5BySE6R29c6ZOwo5nsbW0cK'
+DISQUS_SITENAME = 'jmswaney-github-io'
+DISQUS_SECRET_KEY = 'vjASi0O1T30UrdohjeMobrjrsGXNihetP40yX9n59pHyVmpgS7t7G3KwWR5L9Osc'
+DISQUS_PUBLIC_KEY = 'QGYOWjWq14FG49UwGs8TTZgp2IuSmTCEVVxTz1A5s5BySE6R29c6ZOwo5nsbW0cK'
 
 DISQUS_NO_ID = True # Prevent possible loss of comments when switching themes
 DISQUS_ID_PREFIX_SLUG = True # avoid comment clash on same slugs
