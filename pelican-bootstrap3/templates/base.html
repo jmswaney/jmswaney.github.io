@@ -171,6 +171,7 @@
     {% block banner %}{% endblock %}
 {% endif %}
 <!-- End Banner -->
+
 <div class="container{% if BOOTSTRAP_FLUID %}-fluid{% endif %}">
     <div class="row">
         {% if not HIDE_SIDEBAR or ABOUT_ME or AVATAR %}
@@ -197,6 +198,7 @@
         {% endif %}
     </div>
 </div>
+
 {% include 'includes/footer.html' %}
 
 <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/jquery.min.js"></script>
