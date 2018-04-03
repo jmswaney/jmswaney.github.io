@@ -5,13 +5,13 @@ from __future__ import unicode_literals
 AUTHOR = u'Justin Swaney'
 SITENAME = u'Justin Swaney'
 SITEURL = 'https://jmswaney.github.io'
-RELATIVE_URLS = False # True when developing on localhost... messes up comments
+RELATIVE_URLS = True # True when developing on localhost... messes up comments
 
 PATH = 'content'
 
 TIMEZONE = 'America/New_York'
 
-DEFAULT_LANG = u'English'
+DEFAULT_LANG = u'en'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -54,8 +54,7 @@ PLUGINS = ['i18n_subsites',
 		   'related_posts',
 		   'disqus_static',
 		   'pelican_youtube',
-		   'liquid_tags.include_code',
-		   'liquid_tags.notebook',]
+		   'liquid_tags.include_code',]
 I18N_TEMPLATES_LANG = 'en'
 
 # Add site logo and favicon
@@ -82,11 +81,12 @@ ADDTHIS_PROFILE = 'ra-5ac0f7e62eb46c7e'
 TWITTER_CARDS = True
 USE_OPEN_GRAPH = True
 
+# Sometimes the Disqus server goes down and this will throw some cryptic JSONDecodeError
 # Comments
 DISQUS_SITENAME = u'jmswaney-github-io'
 DISQUS_SECRET_KEY = u'vjASi0O1T30UrdohjeMobrjrsGXNihetP40yX9n59pHyVmpgS7t7G3KwWR5L9Osc'
-DISQUS_PUBLIC_KEY = u'QGYOWjWq14FG49UwGs8TTZgp2IuSmTCEVVxTz1A5s5BySE6R29c6ZOwo5nsbW0cK'
+DISQUS_PUBLIC_KEY = r'QGYOWjWq14FG49UwGs8TTZgp2IuSmTCEVVxTz1A5s5BySE6R29c6ZOwo5nsbW0cK'
 
 DISQUS_NO_ID = True # Prevent possible loss of comments when switching themes
 DISQUS_ID_PREFIX_SLUG = True # avoid comment clash on same slugs
-# :comments: enabled on page metadata can also allow comments on a page too
+# # :comments: enabled on page metadata can also allow comments on a page too
