@@ -32,7 +32,7 @@ Tissue clearing refers to a set of new tissue processing techniques that render 
 
 	A CLARITY-processed mouse brain from Chung, K. (2013) *Nature*.
 
-CLARITY works by and removing lipids (including cell membranes) with a detergent. Since the lipids scatter light very effectively, the tissue becomes more transparent when they are removed. Unfortunately, the tissues also become extremely fragile because the membranes add a lot of structural support. CLARITY uses a paraformaldehyde (PFA) and an acrylamide hydrogel (which is also clear) to support the tissue through this clearing process. The result is a transparent tissue-hydrogel hybrid that retains the original sample's endogenous proteins and nucleic acids in their original place.
+CLARITY works by removing lipids (including cell membranes) with a detergent. Since the lipids scatter light very effectively, the tissue becomes more transparent when they are removed. Unfortunately, the tissues also become extremely fragile because the membranes add a lot of structural support. CLARITY uses paraformaldehyde (PFA) and an acrylamide hydrogel (which is also clear) to support the tissue through this clearing process. The result is a transparent tissue-hydrogel hybrid that retains the original sample's endogenous proteins and nucleic acids in their original place.
 
 Immunostaining
 ---------------
