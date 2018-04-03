@@ -9,4 +9,5 @@ Large point cloud registration using density cross-correlation
 .. :authors: Justin Swaney
 .. :summary: A fast method for rigid registration of large point clouds without correspondences
 
+
 In this post, I'll summarize part of an image processing pipeline for 3D image analsis of large, cleared tissue samples.
