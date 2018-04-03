@@ -46,10 +46,10 @@ DEFAULT_PAGINATION = 10
 THEME = 'pelican-bootstrap3'
 JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
 BOOTSTRAP_THEME = 'cosmo'
-BOOTSTRAP_FLUID = False # Not sure what the container-fluid is
+BOOTSTRAP_FLUID = False
 
 # Load plugins
-PLUGIN_PATHS = ['C:/Users/Justin/pelican-plugins']
+PLUGIN_PATHS = ['pelican-plugins']
 PLUGINS = ['i18n_subsites',
 		   'related_posts',
 		   'disqus_static',
