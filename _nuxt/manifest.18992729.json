@@ -1,0 +1,10 @@
+{
+  "name": "jmswaney.github.io",
+  "short_name": "jmswaney.github.io",
+  "description": "Personal website for Justin Swaney, hosted at [jmswaney.com](https://www.jmswaney.com)",
+  "icons": [],
+  "start_url": "/?standalone=true",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "lang": "en"
+}
