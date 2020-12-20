@@ -24,7 +24,7 @@
     </v-main>
     <!-- Footer -->
     <div class="diagonal-box-btm bg"></div>
-    <v-footer dark padless>
+    <v-footer dark padless color="indigo">
       <v-card flat tile width="100%" color="indigo white--text text-center">
         <v-card-text>
           <v-btn
@@ -39,7 +39,6 @@
             <v-icon size="24px">{{ socialBtn.icon }}</v-icon>
           </v-btn>
         </v-card-text>
-        <v-divider></v-divider>
         <v-card-text> &copy; {{ new Date().getFullYear() }} </v-card-text>
       </v-card>
     </v-footer>
@@ -87,9 +86,7 @@ export default {
   right: 0;
   bottom: 0;
   transform: skewy(var(--angle));
-  transform-origin: 0% 0;
-  outline: 1px solid transparent;
-  backface-visibility: hidden;
+  transform-origin: -5% 0;
 }
 
 .diagonal-box-btm {
@@ -106,7 +103,7 @@ export default {
   right: 0;
   bottom: 0;
   transform: skewy(var(--angle));
-  transform-origin: 100% 0;
+  transform-origin: 105% 0;
   outline: 1px solid transparent;
   backface-visibility: hidden;
 }
