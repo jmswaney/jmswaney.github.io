@@ -1,7 +1,7 @@
 {
   "name": "jmswaney.github.io",
   "short_name": "jmswaney.github.io",
-  "description": "## Build Setup",
+  "description": "Personal website for Justin Swaney, hosted at [jmswaney.com](https://www.jmswaney.com)",
   "icons": [
     {
       "src": "/_nuxt/icons/icon_64x64.5f6a36.png",
