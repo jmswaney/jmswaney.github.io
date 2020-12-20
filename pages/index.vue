@@ -29,7 +29,7 @@
     </v-row>
     <v-row justify="center">
       <v-col cols="auto">
-        <v-card flat max-width="420">
+        <v-card flat max-width="420" class="mx-2">
           <v-img width="100%" src="images/organoid_blender.jpg"> </v-img>
           <v-card-title class="headline">
             <em>SCOUT</em>ing mini-brains
