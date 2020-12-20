@@ -1,5 +1,10 @@
 <template>
-  <v-container>
+  <v-card flat style="margin-top: -128px" color="rgb(0, 0, 0, 0)">
+    <v-card rounded="circle" elevation="18" class="mx-auto" max-width="220">
+      <v-avatar width="100%" height="auto" max-width="220">
+        <v-img src="images/profile.jpg"></v-img>
+      </v-avatar>
+    </v-card>
     <v-row justify="center">
       <v-col cols="auto">
         <h1>
@@ -24,39 +29,41 @@
             </p>
             <p>
               SCOUT's computational pipeline is a Python package with a
-              pre-built Docker image for easy use on Windows, Mac, and Linux.
-              The package also includes a pre-trained U-Net model for
-              segmentation of ventricular zones in cerebral organoids based
-              solely on nuclear staining.
+              pre-built Docker image. The package also includes a pre-trained
+              U-Net model for segmentation of ventricular zones in cerebral
+              organoids based solely on nuclear staining.
             </p>
             <hr class="my-3" />
+            <v-icon>mdi-newspaper-variant</v-icon>
             <a
               href="https://news.mit.edu/2020/scout-helps-researchers-find-quantify-differences-among-organoids-1214"
               target="_blank"
               rel="noopener noreferrer"
             >
-              SCOUT MIT News Article
+              MIT News Article
             </a>
             <br />
+            <v-icon>mdi-book-open-blank-variant</v-icon>
             <a
               href="https://www.nature.com/articles/s41598-020-78130-7"
               target="_blank"
               rel="noopener noreferrer"
             >
-              SCOUT Publication (Open Access)
+              Publication (Open Access)
             </a>
             <br />
+            <v-icon>mdi-github</v-icon>
             <a
               href="https://github.com/chunglabmit/scout"
               target="_blank"
               rel="noopener noreferrer"
             >
-              SCOUT GitHub Repo
+              GitHub Repo
             </a>
             <br />
           </v-card-text>
         </v-card>
       </v-col>
     </v-row>
-  </v-container>
+  </v-card>
 </template>

@@ -1,24 +1,12 @@
 <template>
   <v-app>
     <!-- Top Toolbar -->
-    <v-card flat>
-      <v-toolbar color="indigo" dark extended flat>
-        <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
-      </v-toolbar>
-      <v-card
-        rounded="circle"
-        elevation="20"
-        class="mx-auto"
-        max-width="240"
-        style="margin-top: -64px"
-      >
-        <v-avatar width="100%" height="auto" max-width="240">
-          <v-img src="images/profile.jpg"></v-img>
-        </v-avatar>
-      </v-card>
-    </v-card>
+    <v-toolbar color="indigo" flat dark>
+      <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
+    </v-toolbar>
+    <div class="diagonal-box-top bg"></div>
     <!-- Nav Drawer -->
-    <v-navigation-drawer v-model="drawer" absolute bottom temporary>
+    <v-navigation-drawer v-model="drawer" absolute temporary>
       <v-list nav dense>
         <v-list-item-group v-model="group" active-class="indigo--text">
           <v-list-item>
@@ -31,15 +19,29 @@
       </v-list>
     </v-navigation-drawer>
     <!-- Main Content -->
-    <v-content>
+    <v-main>
       <Nuxt />
-    </v-content>
+    </v-main>
     <!-- Footer -->
-    <v-divider></v-divider>
-    <v-footer padless color="white">
-      <v-col class="text-center" cols="12"
-        >&copy; {{ new Date().getFullYear() }}</v-col
-      >
+    <div class="diagonal-box-btm bg"></div>
+    <v-footer dark padless>
+      <v-card flat tile width="100%" color="indigo white--text text-center">
+        <v-card-text>
+          <v-btn
+            v-for="(socialBtn, idx) in socialBtns"
+            :key="idx"
+            icon
+            :href="socialBtn.href"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mx-2 white--text"
+          >
+            <v-icon size="24px">{{ socialBtn.icon }}</v-icon>
+          </v-btn>
+        </v-card-text>
+        <v-divider></v-divider>
+        <v-card-text> &copy; {{ new Date().getFullYear() }} </v-card-text>
+      </v-card>
     </v-footer>
   </v-app>
 </template>
@@ -50,6 +52,12 @@ export default {
     return {
       drawer: false,
       group: null,
+      socialBtns: [
+        { icon: 'mdi-twitter', href: 'https://twitter.com/justinmswaney' },
+        { icon: 'mdi-linkedin', href: 'https://www.linkedin.com/in/jmswaney/' },
+        { icon: 'mdi-instagram', href: 'https://www.instagram.com/jswaymusic' },
+        { icon: 'mdi-github', href: 'https://github.com/jmswaney' },
+      ],
     }
   },
   watch: {
@@ -59,3 +67,51 @@ export default {
   },
 }
 </script>
+
+<style>
+:root {
+  --angle: -4deg;
+}
+
+.diagonal-box-top {
+  position: relative;
+  padding: 64px 0;
+  margin-top: -1px;
+}
+
+.diagonal-box-top:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  transform: skewy(var(--angle));
+  transform-origin: 0% 0;
+  outline: 1px solid transparent;
+  backface-visibility: hidden;
+}
+
+.diagonal-box-btm {
+  position: relative;
+  padding: 64px 0;
+  margin-top: -1px;
+}
+
+.diagonal-box-btm:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  transform: skewy(var(--angle));
+  transform-origin: 100% 0;
+  outline: 1px solid transparent;
+  backface-visibility: hidden;
+}
+
+.bg:before {
+  background-color: #3f51b5;
+}
+</style>
