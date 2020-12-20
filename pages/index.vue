@@ -6,16 +6,23 @@
       </v-avatar>
     </v-card>
     <v-row justify="center">
-      <v-col cols="auto">
+      <v-col cols="auto" class="text-center">
         <h1>
           <span class="font-weight-light">Justin</span>
           <span>Swaney</span>
         </h1>
+        <p>
+          <em>Scientist, Developer, Engineer</em>
+          <br />
+          <v-icon color="indigo" class="px-5">mdi-microscope</v-icon>
+          <v-icon color="indigo" class="px-5">mdi-laptop-windows</v-icon>
+          <v-icon color="indigo" class="px-5">mdi-flask</v-icon>
+        </p>
       </v-col>
     </v-row>
     <v-row justify="center">
       <v-col cols="auto">
-        <v-card elevation="6" max-width="420">
+        <v-card elevation="4" max-width="420">
           <v-img width="100%" src="images/organoid_blender.jpg"> </v-img>
           <v-card-title class="headline">
             <em>SCOUT</em>ing mini-brains
@@ -58,7 +65,7 @@
               target="_blank"
               rel="noopener noreferrer"
             >
-              GitHub Repo
+              Github Repo
             </a>
             <br />
           </v-card-text>
