@@ -18,10 +18,9 @@
           <v-card-text>
             <p>
               Published in <em>Scientific Reports</em>, the SCOUT pipeline
-              enables rapid staining, imaging, and analysis 3D cerebral
+              enables rapid staining, imaging, and analysis of 3D cerebral
               organoids. We applied SCOUT to compare different culture protocols
-              as well as to study how Zika virus inhibits growth in cerebral
-              organoids.
+              as well as to study how Zika virus inhibits organoid growth.
             </p>
             <p>
               SCOUT's computational pipeline is a Python package with a
