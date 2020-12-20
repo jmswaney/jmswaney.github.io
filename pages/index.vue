@@ -9,14 +9,16 @@
       <v-col cols="auto" class="text-center">
         <h1>
           <span class="font-weight-light">Justin</span>
-          <span>Swaney</span>
+          <span class="indigo--text">Swaney</span>
         </h1>
         <p>
           <em>Scientist, Developer, Engineer</em>
           <br />
-          <v-icon color="indigo" class="px-5">mdi-microscope</v-icon>
-          <v-icon color="indigo" class="px-5">mdi-laptop-windows</v-icon>
-          <v-icon color="indigo" class="px-5">mdi-flask</v-icon>
+          <v-icon color="indigo lighten-2" class="px-5">mdi-microscope</v-icon>
+          <v-icon color="indigo lighten-2" class="px-5"
+            >mdi-laptop-windows</v-icon
+          >
+          <v-icon color="indigo lighten-2" class="px-5">mdi-flask</v-icon>
         </p>
       </v-col>
     </v-row>
