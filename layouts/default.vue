@@ -1,12 +1,12 @@
 <template>
   <v-app>
     <!-- Top Toolbar -->
-    <v-toolbar color="indigo" flat dark>
+    <v-app-bar color="indigo" flat dark app collapse dense>
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
-    </v-toolbar>
+    </v-app-bar>
     <div class="diagonal-box-top bg"></div>
     <!-- Nav Drawer -->
-    <v-navigation-drawer v-model="drawer" absolute temporary>
+    <v-navigation-drawer v-model="drawer" temporary app>
       <v-list nav dense>
         <v-list-item-group v-model="group" active-class="indigo--text">
           <v-list-item>
@@ -24,8 +24,14 @@
     </v-main>
     <!-- Footer -->
     <div class="diagonal-box-btm bg"></div>
-    <v-footer dark padless color="indigo">
-      <v-card flat tile width="100%" color="indigo white--text text-center">
+    <v-footer dark padless>
+      <v-card
+        flat
+        tile
+        width="100%"
+        color="indigo"
+        class="white--text text-center"
+      >
         <v-card-text>
           <v-btn
             v-for="(socialBtn, idx) in socialBtns"
@@ -74,8 +80,10 @@ export default {
 
 .diagonal-box-top {
   position: relative;
-  padding: 64px 0;
+  padding-top: 192px;
+  overflow: hidden;
   margin-top: -1px;
+  margin-right: -16px;
 }
 
 .diagonal-box-top:before {
@@ -91,8 +99,10 @@ export default {
 
 .diagonal-box-btm {
   position: relative;
-  padding: 64px 0;
+  padding-bottom: 128px;
+  overflow: hidden;
   margin-top: -1px;
+  margin-right: -16px;
 }
 
 .diagonal-box-btm:before {
@@ -104,8 +114,7 @@ export default {
   bottom: 0;
   transform: skewy(var(--angle));
   transform-origin: 105% 0;
-  outline: 1px solid transparent;
-  backface-visibility: hidden;
+  padding-bottom: 256px;
 }
 
 .bg:before {

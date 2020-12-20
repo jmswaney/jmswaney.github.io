@@ -1,6 +1,11 @@
 <template>
-  <v-card flat style="margin-top: -128px" color="rgb(0, 0, 0, 0)">
-    <v-card rounded="circle" elevation="18" class="mx-auto" max-width="220">
+  <v-card flat style="margin-top: -192px" color="rgb(0, 0, 0, 0)">
+    <v-card
+      rounded="circle"
+      elevation="18"
+      class="mx-auto grey"
+      max-width="220"
+    >
       <v-avatar width="100%" height="auto" max-width="220">
         <v-img src="images/profile.jpg"></v-img>
       </v-avatar>
