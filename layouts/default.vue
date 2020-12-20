@@ -1,120 +1,26 @@
 <template>
   <v-app>
-    <!-- Top Toolbar -->
-    <v-app-bar color="indigo" flat dark app collapse dense>
-      <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
-    </v-app-bar>
-    <div class="diagonal-box-top bg"></div>
-    <!-- Nav Drawer -->
-    <v-navigation-drawer v-model="drawer" temporary app>
-      <v-list nav dense>
-        <v-list-item-group v-model="group" active-class="indigo--text">
-          <v-list-item>
-            <v-list-item-title>Foo</v-list-item-title>
-          </v-list-item>
-          <v-list-item>
-            <v-list-item-title>Bar</v-list-item-title>
-          </v-list-item>
-        </v-list-item-group>
-      </v-list>
-    </v-navigation-drawer>
+    <AppBarWithNav />
     <!-- Main Content -->
     <v-main>
       <Nuxt />
     </v-main>
-    <!-- Footer -->
-    <div class="diagonal-box-btm bg"></div>
-    <v-footer dark padless>
-      <v-card
-        flat
-        tile
-        width="100%"
-        color="indigo"
-        class="white--text text-center"
-      >
-        <v-card-text>
-          <v-btn
-            v-for="(socialBtn, idx) in socialBtns"
-            :key="idx"
-            icon
-            :href="socialBtn.href"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="mx-2 white--text"
-          >
-            <v-icon size="24px">{{ socialBtn.icon }}</v-icon>
-          </v-btn>
-        </v-card-text>
-        <v-card-text> &copy; {{ new Date().getFullYear() }} </v-card-text>
-      </v-card>
-    </v-footer>
+    <AppFooter />
   </v-app>
 </template>
 
 <script>
+import AppBarWithNav from '@/components/AppBarWithNav'
+import AppFooter from '@/components/AppFooter'
+
 export default {
-  data() {
-    return {
-      drawer: false,
-      group: null,
-      socialBtns: [
-        { icon: 'mdi-twitter', href: 'https://twitter.com/justinmswaney' },
-        { icon: 'mdi-linkedin', href: 'https://www.linkedin.com/in/jmswaney/' },
-        { icon: 'mdi-instagram', href: 'https://www.instagram.com/jswaymusic' },
-        { icon: 'mdi-github', href: 'https://github.com/jmswaney' },
-      ],
-    }
-  },
-  watch: {
-    group() {
-      this.drawer = false
-    },
-  },
+  components: { AppBarWithNav, AppFooter },
 }
 </script>
 
 <style>
 :root {
   --angle: -4deg;
-}
-
-.diagonal-box-top {
-  position: relative;
-  padding-top: 192px;
-  overflow: hidden;
-  margin-top: -1px;
-  margin-right: -16px;
-}
-
-.diagonal-box-top:before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  transform: skewy(var(--angle));
-  transform-origin: -5% 0;
-}
-
-.diagonal-box-btm {
-  position: relative;
-  padding-bottom: 128px;
-  overflow: hidden;
-  margin-top: -1px;
-  margin-right: -16px;
-}
-
-.diagonal-box-btm:before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  transform: skewy(var(--angle));
-  transform-origin: 105% 0;
-  padding-bottom: 256px;
 }
 
 .bg:before {
