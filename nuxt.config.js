@@ -15,6 +15,7 @@ export default {
         content: 'width=device-width, initial-scale=1, minimum-scale=1',
       },
       { hid: 'description', name: 'description', content: '' },
+      { name: 'theme-color', content: '#3f51b5' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
