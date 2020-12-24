@@ -1,14 +1,16 @@
 <template>
   <div>
     <!-- Footer -->
-    <div class="diagonal-box-btm bg"></div>
-    <v-footer dark padless>
+    <!-- <div class="diagonal-box-btm bg"></div> -->
+    <!-- <v-divider class="px-3"></v-divider> -->
+    <v-footer>
       <v-card
         flat
         tile
+        light
         width="100%"
-        color="indigo"
-        class="white--text text-center"
+        color="grey lighten-4"
+        class="text-center"
       >
         <v-card-text>
           <v-btn
@@ -18,7 +20,7 @@
             :href="socialBtn.href"
             target="_blank"
             rel="noopener noreferrer"
-            class="mx-2 white--text"
+            class="mx-2 button-hover"
           >
             <v-icon size="24px">{{ socialBtn.icon }}</v-icon>
           </v-btn>
@@ -63,5 +65,9 @@ export default {
   transform: skewy(var(--angle));
   transform-origin: 105% 0;
   padding-bottom: 256px;
+}
+
+.button-hover:hover {
+  color: var(--indigo);
 }
 </style>

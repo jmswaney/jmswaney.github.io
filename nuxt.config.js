@@ -1,4 +1,5 @@
 import colors from 'vuetify/es5/util/colors'
+import defaultTheme from 'tailwindcss/defaultTheme'
 
 export default {
   // Target (https://go.nuxtjs.dev/config-target)
@@ -43,10 +44,18 @@ export default {
     '@nuxtjs/pwa',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
+    // https://tailwindcss.nuxtjs.org/
+    '@nuxtjs/tailwindcss',
   ],
 
   // Content module configuration (https://go.nuxtjs.dev/config-content)
-  content: {},
+  content: {
+    markdown: {
+      prism: {
+        theme: 'prism-themes/themes/prism-material-oceanic.css',
+      },
+    },
+  },
 
   // Vuetify module configuration (https://go.nuxtjs.dev/config-vuetify)
   vuetify: {

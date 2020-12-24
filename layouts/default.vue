@@ -2,7 +2,7 @@
   <v-app>
     <AppBarWithNav />
     <!-- Main Content -->
-    <v-main>
+    <v-main class="grey lighten-4">
       <Nuxt />
     </v-main>
     <AppFooter />
@@ -20,7 +20,8 @@ export default {
 
 <style>
 :root {
-  --angle: -4deg;
+  --angle: -3deg;
+  --indigo: #3f51b5;
 }
 
 .bg:before {

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="grey lighten-4">
     <div class="diagonal-box-top bg"></div>
     <!-- Top Toolbar -->
     <v-app-bar color="indigo" flat dark app dense scroll-threshold="128">
@@ -22,7 +22,7 @@
       >
     </v-app-bar>
     <!-- Nav Drawer -->
-    <v-navigation-drawer v-model="drawer" temporary app>
+    <v-navigation-drawer v-model="drawer" temporary app color="grey lighten-4">
       <v-list nav dense>
         <v-list-item-group v-model="group" active-class="indigo--text">
           <v-list-item :value="true" href="/">
