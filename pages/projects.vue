@@ -2,7 +2,7 @@
   <v-row justify="center" style="margin-top: -192px" class="py-0">
     <v-col cols="auto">
       <v-card flat max-width="420" class="mx-2 transparent">
-        <v-img width="100%" src="images/organoid_blender.jpg" class="mx-auto">
+        <v-img width="100%" src="/images/organoid_blender.jpg" class="mx-auto">
         </v-img>
         <v-card-title class="headline">
           <em>SCOUT</em>ing mini-brains

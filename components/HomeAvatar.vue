@@ -2,7 +2,7 @@
   <v-container style="margin-top: -192px" class="py-0">
     <v-row justify="center">
       <v-avatar width="50%" height="auto" class="elevation-15" max-width="220">
-        <v-img src="images/profile.jpg"></v-img>
+        <v-img src="/images/profile.jpg"></v-img>
       </v-avatar>
     </v-row>
 
