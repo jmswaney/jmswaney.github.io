@@ -1,32 +1,21 @@
 <template>
   <v-row justify="center" style="margin-top: -192px" class="py-0">
     <v-col cols="auto">
-      <v-card flat max-width="420" class="mx-2 transparent">
+      <v-card flat max-width="360" class="mx-2 transparent">
         <v-img width="100%" src="/images/organoid_blender.jpg" class="mx-auto">
         </v-img>
-        <v-card-title class="headline">
+        <v-card-title class="headline pb-0">
           <em>SCOUT</em>ing mini-brains
         </v-card-title>
         <v-card-text class="tw-prose">
-          <p>
-            Published in <em>Scientific Reports</em>, the SCOUT pipeline enables
-            rapid staining, imaging, and analysis of 3D cerebral organoids. We
-            applied SCOUT to compare different culture protocols as well as to
-            study how Zika virus inhibits organoid growth.
-          </p>
-          <p>
-            SCOUT's computational pipeline is a Python package with a pre-built
-            Docker image. The package also includes a pre-trained U-Net model
-            for segmentation of ventricular zones in cerebral organoids based
-            solely on nuclear staining.
-          </p>
+          <nuxt-content :document="scout"></nuxt-content>
           <hr class="my-3" />
           <template v-for="link of links">
-            <v-icon :key="link.name">{{ link.icon }}</v-icon>
+            <v-icon :key="`icon-${link.name}`">{{ link.icon }}</v-icon>
             <a :key="link.name" :href="link.href">
               {{ link.name }}
             </a>
-            <br :key="link.name" />
+            <br :key="`br-${link.name}`" />
           </template>
         </v-card-text>
       </v-card>
@@ -35,10 +24,23 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
-export default Vue.extend({
-  data() {
+import {
+  defineComponent,
+  useContext,
+  ref,
+  useFetch,
+} from '@nuxtjs/composition-api'
+
+export default defineComponent({
+  setup() {
+    const { app } = useContext()
+    const scout = ref(null)
+    const { fetch } = useFetch(async () => {
+      scout.value = await app.$content('projects/scout').fetch()
+    })
+    fetch()
     return {
+      scout,
       links: [
         {
           name: 'MIT News Article',
