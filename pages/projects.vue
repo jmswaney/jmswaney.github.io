@@ -21,35 +21,43 @@
             solely on nuclear staining.
           </p>
           <hr class="my-3" />
-          <v-icon>mdi-newspaper-variant</v-icon>
-          <a
-            href="https://news.mit.edu/2020/scout-helps-researchers-find-quantify-differences-among-organoids-1214"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            MIT News Article
-          </a>
-          <br />
-          <v-icon>mdi-book-open-blank-variant</v-icon>
-          <a
-            href="https://www.nature.com/articles/s41598-020-78130-7"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Publication (Open Access)
-          </a>
-          <br />
-          <v-icon>mdi-github</v-icon>
-          <a
-            href="https://github.com/chunglabmit/scout"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Github Repo
-          </a>
-          <br />
+          <template v-for="link of links">
+            <v-icon :key="link.name">{{ link.icon }}</v-icon>
+            <a :key="link.name" :href="link.href">
+              {{ link.name }}
+            </a>
+            <br :key="link.name" />
+          </template>
         </v-card-text>
       </v-card>
     </v-col>
   </v-row>
 </template>
+
+<script lang="ts">
+import Vue from 'vue'
+export default Vue.extend({
+  data() {
+    return {
+      links: [
+        {
+          name: 'MIT News Article',
+          icon: 'mdi-newspaper-variant',
+          href:
+            'https://news.mit.edu/2020/scout-helps-researchers-find-quantify-differences-among-organoids-1214',
+        },
+        {
+          name: 'Publications (Open Access)',
+          icon: 'mdi-book-open-blank-variant',
+          href: 'https://www.nature.com/articles/s41598-020-78130-7',
+        },
+        {
+          name: 'Github Repo',
+          icon: 'mdi-github',
+          href: 'https://github.com/chunglabmit/scout',
+        },
+      ],
+    }
+  },
+})
+</script>
