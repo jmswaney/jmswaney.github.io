@@ -1,11 +1,12 @@
 ---
 title: SCOUTing mini-brains
-description: 'A project snippet for the SCOUT paper'
+description: 'A card for the SCOUT project'
+image: /images/organoid_blender.jpg
 links:
   - name: MIT News Article
     icon: mdi-newspaper-variant
     href: https://news.mit.edu/2020/scout-helps-researchers-find-quantify-differences-among-organoids-1214
-  - name: Publications (Open Access)
+  - name: Publication (Open Access)
     icon: mdi-book-open-blank-variant
     href: https://www.nature.com/articles/s41598-020-78130-7
   - name: Github Repo
