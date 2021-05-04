@@ -9,7 +9,7 @@
       <nuxt-content :document="project"></nuxt-content>
       <template v-for="link of project.links">
         <v-icon :key="`icon-${link.name}`">{{ link.icon }}</v-icon>
-        <a :key="link.name" :href="link.href">
+        <a :key="link.name" :href="link.href" target="_blank">
           {{ link.name }}
         </a>
         <br :key="`br-${link.name}`" />

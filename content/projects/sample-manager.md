@@ -6,6 +6,9 @@ links:
   - name: MIT News Article
     icon: mdi-newspaper-variant
     href: https://news.mit.edu/2019/machine-learning-you-can-dance-to-samply-0918
+  - name: AES Presentation
+    icon: mdi-presentation
+    href: https://www.aes.org/events/2020/learning/listing.cfm
   - name: Github Repo
     icon: mdi-github
     href: https://github.com/samply-app/samply-desktop-releases
