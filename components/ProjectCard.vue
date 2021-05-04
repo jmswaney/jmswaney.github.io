@@ -1,6 +1,7 @@
 <template>
   <v-card flat max-width="360" class="mx-2 transparent">
-    <v-img width="100%" :src="project.image" class="mx-auto"> </v-img>
+    <v-img width="100%" max-height="200" :src="project.image" class="mx-auto">
+    </v-img>
     <v-card-title class="headline pb-0">
       {{ project.title }}
     </v-card-title>
@@ -19,7 +20,7 @@
 
 <script lang="ts">
 import { defineComponent } from '@nuxtjs/composition-api'
-import { useProject } from '@/composition/Projects'
+import { useProject } from '@/composition/useProject'
 
 export default defineComponent({
   props: {

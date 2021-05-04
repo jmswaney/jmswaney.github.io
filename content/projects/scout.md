@@ -1,5 +1,5 @@
 ---
-title: SCOUTing mini-brains
+title: Studying mini-brains
 description: 'A card for the SCOUT project'
 image: /images/organoid_blender.jpg
 links:

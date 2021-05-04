@@ -3,6 +3,9 @@
     <v-col cols="auto">
       <project-card path="projects/scout" />
     </v-col>
+    <v-col cols="auto">
+      <project-card path="projects/sample-manager" />
+    </v-col>
   </v-row>
 </template>
 
