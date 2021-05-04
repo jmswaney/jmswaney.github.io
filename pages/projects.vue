@@ -5,12 +5,11 @@
         <v-img width="100%" src="/images/organoid_blender.jpg" class="mx-auto">
         </v-img>
         <v-card-title class="headline pb-0">
-          <em>SCOUT</em>ing mini-brains
+          {{ scout.title }}
         </v-card-title>
         <v-card-text class="tw-prose">
           <nuxt-content :document="scout"></nuxt-content>
-          <hr class="my-3" />
-          <template v-for="link of links">
+          <template v-for="link of scout.links">
             <v-icon :key="`icon-${link.name}`">{{ link.icon }}</v-icon>
             <a :key="link.name" :href="link.href">
               {{ link.name }}
@@ -39,27 +38,7 @@ export default defineComponent({
       scout.value = await app.$content('projects/scout').fetch()
     })
     fetch()
-    return {
-      scout,
-      links: [
-        {
-          name: 'MIT News Article',
-          icon: 'mdi-newspaper-variant',
-          href:
-            'https://news.mit.edu/2020/scout-helps-researchers-find-quantify-differences-among-organoids-1214',
-        },
-        {
-          name: 'Publications (Open Access)',
-          icon: 'mdi-book-open-blank-variant',
-          href: 'https://www.nature.com/articles/s41598-020-78130-7',
-        },
-        {
-          name: 'Github Repo',
-          icon: 'mdi-github',
-          href: 'https://github.com/chunglabmit/scout',
-        },
-      ],
-    }
+    return { scout }
   },
 })
 </script>
