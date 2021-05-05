@@ -6,7 +6,7 @@ export default {
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    titleTemplate: '%s - Justin Swaney',
+    titleTemplate: 'Justin Swaney', // '%s - Justin Swaney',
     title: 'Home',
     meta: [
       { charset: 'utf-8' },
