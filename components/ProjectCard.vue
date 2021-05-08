@@ -20,7 +20,7 @@
 
 <script lang="ts">
 import { defineComponent } from '@nuxtjs/composition-api'
-import { useProject } from '@/composition/useProject'
+import { useContent } from '@/composition/useProject'
 
 export default defineComponent({
   props: {
@@ -30,7 +30,7 @@ export default defineComponent({
     },
   },
   setup(props) {
-    return { ...useProject(props.path) }
+    return { project: useContent(props.path) }
   },
 })
 </script>

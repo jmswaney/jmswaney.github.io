@@ -1,11 +1,12 @@
 import { useContext, ref, useFetch } from '@nuxtjs/composition-api'
 
-export const useProject = (path: string) => {
+export const useContent = (path: string) => {
   const { app } = useContext()
-  const project = ref(null)
+  const data = ref(null)
   const { fetch } = useFetch(async () => {
-    project.value = await app.$content(path).fetch()
+    data.value = await app.$content(path).fetch()
+    console.log(data.value)
   })
   fetch()
-  return { project }
+  return data
 }

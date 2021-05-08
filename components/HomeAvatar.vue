@@ -5,7 +5,6 @@
         <v-img src="/images/profile.jpg"></v-img>
       </v-avatar>
     </v-row>
-
     <v-row justify="center">
       <v-col cols="auto" class="text-center">
         <h1>
