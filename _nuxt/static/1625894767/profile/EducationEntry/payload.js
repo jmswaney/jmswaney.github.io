@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/profile/EducationEntry", {data:[{}],fetch:[],mutations:void 0});
