@@ -20,6 +20,12 @@
         href="/projects"
         >Projects</v-btn
       >
+      <v-btn
+        text
+        class="mx-1 text-capitalize hidden-sm-and-down"
+        href="https://blog.jmswaney.com"
+        >Blog</v-btn
+      >
     </v-app-bar>
     <!-- Nav Drawer -->
     <v-navigation-drawer v-model="drawer" temporary app color="grey lighten-4">
@@ -36,6 +42,10 @@
           <v-list-item href="/projects">
             <v-icon left>mdi-folder</v-icon>
             <v-list-item-title>Projects</v-list-item-title>
+          </v-list-item>
+          <v-list-item href="https://blog.jmswaney.com">
+            <v-icon left>mdi-post</v-icon>
+            <v-list-item-title>Blog</v-list-item-title>
           </v-list-item>
         </v-list-item-group>
       </v-list>
