@@ -45,8 +45,6 @@ export default {
     '@nuxtjs/pwa',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
-    // https://tailwindcss.nuxtjs.org/
-    '@nuxtjs/tailwindcss',
   ],
 
   // Content module configuration (https://go.nuxtjs.dev/config-content)
@@ -78,5 +76,7 @@ export default {
   },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
-  build: {},
+  build: {
+    // analyze: true,
+  },
 }
