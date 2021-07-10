@@ -27,10 +27,10 @@ export default defineComponent({
   },
   setup(props) {
     return {
-      role: props.entry.role,
-      company: props.entry.company,
-      start: props.entry.start,
-      end: props.entry.end,
+      role: props.entry?.role,
+      company: props.entry?.company,
+      start: props.entry?.start,
+      end: props.entry?.end,
     }
   },
 })

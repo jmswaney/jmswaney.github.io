@@ -26,10 +26,10 @@ export default defineComponent({
   },
   setup(props) {
     return {
-      level: props.entry.level,
-      field: props.entry.field,
-      school: props.entry.school,
-      year: props.entry.year,
+      level: props.entry?.level,
+      field: props.entry?.field,
+      school: props.entry?.school,
+      year: props.entry?.year,
     }
   },
 })
