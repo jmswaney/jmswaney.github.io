@@ -1,7 +1,9 @@
 ---
 title: Studying mini-brains
 description: 'A card for the SCOUT project'
-image: /images/organoid_blender.jpg
+image: 
+    src: /images/organoid_blender/organoid_blender.jpg
+    lazySrc: /images/organoid_blender/organoid_blender_32x32.jpg
 links:
   - name: MIT News Article
     icon: mdi-newspaper-variant

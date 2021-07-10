@@ -1,7 +1,9 @@
 ---
 title: AI-powered sample manager
 description: 'A card for the sample manager competition'
-image: /images/sample_manager.png
+image: 
+    src: /images/sample_manager/sample_manager.png
+    lazySrc: /images/sample_manager/sample_manager_32x19.png
 links:
   - name: MIT News Article
     icon: mdi-newspaper-variant

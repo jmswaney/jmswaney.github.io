@@ -1,11 +1,18 @@
 <template>
   <v-card flat max-width="360" class="mx-2 transparent">
-    <v-img width="100%" max-height="200" :src="project.image" class="mx-auto">
+    <v-img
+      v-if="project.image !== undefined"
+      width="100%"
+      max-height="200"
+      :src="project.image.src"
+      :lazy-src="project.image.lazySrc || ''"
+      class="mx-auto"
+    >
     </v-img>
     <v-card-title class="headline pb-0">
       {{ project.title }}
     </v-card-title>
-    <v-card-text class="tw-prose">
+    <v-card-text class="">
       <nuxt-content :document="project"></nuxt-content>
       <template v-for="link of project.links">
         <v-icon :key="`icon-${link.name}`">{{ link.icon }}</v-icon>
@@ -30,7 +37,8 @@ export default defineComponent({
     },
   },
   setup(props) {
-    return { project: useContent(props.path) }
+    const project = useContent(props.path)
+    return { project }
   },
 })
 </script>
