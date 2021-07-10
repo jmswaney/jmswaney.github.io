@@ -8,7 +8,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from '@nuxtjs/composition-api'
+import { defineComponent, PropType } from '@nuxtjs/composition-api'
 
 interface EducationEntry {
   level: string
@@ -20,7 +20,7 @@ interface EducationEntry {
 export default defineComponent({
   props: {
     entry: {
-      type: Object as () => EducationEntry,
+      type: Object as PropType<EducationEntry>,
       required: true,
     },
   },

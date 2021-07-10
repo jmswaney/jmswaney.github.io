@@ -1,8 +1,5 @@
 <template>
   <div>
-    <!-- Footer -->
-    <!-- <div class="diagonal-box-btm bg"></div> -->
-    <!-- <v-divider class="px-3"></v-divider> -->
     <v-footer>
       <v-card
         flat

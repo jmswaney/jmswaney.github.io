@@ -9,7 +9,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from '@nuxtjs/composition-api'
+import { defineComponent, PropType } from '@nuxtjs/composition-api'
 
 interface ExperienceEntryProps {
   role: string
@@ -21,7 +21,7 @@ interface ExperienceEntryProps {
 export default defineComponent({
   props: {
     entry: {
-      type: Object as () => ExperienceEntryProps,
+      type: Object as PropType<ExperienceEntryProps>,
       required: true,
     },
   },
