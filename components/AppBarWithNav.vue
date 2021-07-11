@@ -5,47 +5,22 @@
     <v-app-bar color="indigo" flat dark app dense scroll-threshold="128">
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
       <v-spacer></v-spacer>
-      <v-btn text class="mx-1 text-capitalize hidden-sm-and-down" href="/"
-        >About</v-btn
-      >
       <v-btn
+        v-for="item in items"
+        :key="item.name"
         text
-        class="mx-1 text-capitalize hidden-sm-and-down"
-        href="/profile"
-        >Profile</v-btn
-      >
-      <v-btn
-        text
-        class="mx-1 text-capitalize hidden-sm-and-down"
-        href="/projects"
-        >Projects</v-btn
-      >
-      <v-btn
-        text
-        class="mx-1 text-capitalize hidden-sm-and-down"
-        href="https://blog.jmswaney.com"
-        >Blog</v-btn
+        class="text-capitalize hidden-sm-and-down mx-1"
+        :href="item.href"
+        >{{ item.name }}</v-btn
       >
     </v-app-bar>
     <!-- Nav Drawer -->
     <v-navigation-drawer v-model="drawer" temporary app color="grey lighten-4">
       <v-list nav dense>
         <v-list-item-group v-model="group" active-class="indigo--text">
-          <v-list-item :value="true" href="/">
-            <v-icon left>mdi-home</v-icon>
-            <v-list-item-title>About</v-list-item-title>
-          </v-list-item>
-          <v-list-item href="/profile">
-            <v-icon left>mdi-account</v-icon>
-            <v-list-item-title>Profile</v-list-item-title>
-          </v-list-item>
-          <v-list-item href="/projects">
-            <v-icon left>mdi-folder</v-icon>
-            <v-list-item-title>Projects</v-list-item-title>
-          </v-list-item>
-          <v-list-item href="https://blog.jmswaney.com">
-            <v-icon left>mdi-post</v-icon>
-            <v-list-item-title>Blog</v-list-item-title>
+          <v-list-item v-for="item in items" :key="item.name" :href="item.href">
+            <v-icon left>{{ item.icon }}</v-icon>
+            <v-list-item-title>{{ item.name }}</v-list-item-title>
           </v-list-item>
         </v-list-item-group>
       </v-list>
@@ -59,6 +34,28 @@ export default {
     return {
       drawer: false,
       group: null,
+      items: [
+        {
+          name: 'About',
+          icon: 'mdi-home',
+          href: '/',
+        },
+        {
+          name: 'Profile',
+          icon: 'mdi-account',
+          href: '/profile',
+        },
+        {
+          name: 'Projects',
+          icon: 'mdi-folder',
+          href: '/projects',
+        },
+        {
+          name: 'Blog',
+          icon: 'mdi-post',
+          href: 'https://blog.jmswaney.com',
+        },
+      ],
     }
   },
   watch: {
