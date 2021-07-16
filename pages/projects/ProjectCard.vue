@@ -27,17 +27,30 @@
 
 <script lang="ts">
 import { defineComponent } from '@nuxtjs/composition-api'
-import { useContent } from '@/composition/useProject'
+import useContent from '~/composition/useContent'
+
+interface Link {
+  name: string
+  icon: string
+  href: string
+}
+
+interface Project {
+  title: string
+  description: string
+  image: {
+    src: string
+    lazySrc: string
+  }
+  links: Link[]
+}
 
 export default defineComponent({
   props: {
-    path: {
-      type: String,
-      default: '',
-    },
+    path: { type: String, required: true }
   },
   setup(props) {
-    const project = useContent(props.path)
+    const { data: project } = useContent<Project>(props.path)
     return { project }
   },
 })
