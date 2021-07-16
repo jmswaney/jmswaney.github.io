@@ -21,6 +21,6 @@ export default {
   setup() {
     const { data: about } = useContent<About>('about')
     return { about }
-  }
+  },
 }
 </script>

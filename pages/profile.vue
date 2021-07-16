@@ -16,7 +16,7 @@
         <v-card-text>
           <!-- Education -->
           <h1 class="pb-3 text-h6 font-weight-light">Education</h1>
-          <div v-for="entry in profile.education">
+          <div v-for="entry in profile.education" :key="entry.school">
             <h1 class="text-body-2">{{ entry.level }} in {{ entry.field }}</h1>
             <h1 class="pb-3 text-body-2 font-weight-medium">
               {{ entry.school }}, {{ entry.year }}
@@ -24,12 +24,14 @@
           </div>
           <!-- Experience -->
           <h1 class="pb-3 text-h6 font-weight-light">Experience</h1>
-          <div v-for="entry in profile.experience">
+          <div v-for="entry in profile.experience" :key="entry.company">
             <h1 class="text-body-2">{{ entry.role }}</h1>
             <h1 class="text-body-2 font-weight-medium">
               {{ entry.company }}
             </h1>
-            <h1 class="pb-3 text-body-2">{{ entry.start }} - {{ entry.end || 'Present' }}</h1>
+            <h1 class="pb-3 text-body-2">
+              {{ entry.start }} - {{ entry.end || 'Present' }}
+            </h1>
           </div>
         </v-card-text>
       </v-card>
@@ -38,7 +40,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, Ref } from '@nuxtjs/composition-api'
+import { defineComponent } from '@nuxtjs/composition-api'
 import useContent from '~/composition/useContent'
 
 interface Education {

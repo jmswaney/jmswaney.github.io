@@ -47,7 +47,7 @@ interface Project {
 
 export default defineComponent({
   props: {
-    path: { type: String, required: true }
+    path: { type: String, required: true },
   },
   setup(props) {
     const { data: project } = useContent<Project>(props.path)
