@@ -18,9 +18,7 @@
           <em>Scientist, Developer, Engineer</em>
           <br />
           <v-icon color="indigo lighten-2" class="px-5">mdi-microscope</v-icon>
-          <v-icon color="indigo lighten-2" class="px-5"
-            >mdi-laptop-windows</v-icon
-          >
+          <v-icon color="indigo lighten-2" class="px-5">mdi-laptop</v-icon>
           <v-icon color="indigo lighten-2" class="px-5">mdi-flask</v-icon>
         </p>
       </v-col>
