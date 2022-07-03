@@ -1,18 +1,13 @@
 <template>
-  <div>
-    <!-- <div class="diagonal-box-top bg"></div> -->
-    <!-- Top Toolbar -->
-    <div>
-      <div
-        v-for="item in items"
-        :key="item.name"
-        text
-        :href="item.href"
-        >
-          <i class="mdi" :class="item.icon" />
+  <div class="flex gap-4 justify-end my-4 bg-indigo-600">
+    <div
+      v-for="item in items"
+      :key="item.name"
+      >
+        <NuxtLink :to="item.href">
           {{ item.name }}
-        </div>
-    </div>
+        </NuxtLink>
+      </div>
   </div>
 </template>
 
