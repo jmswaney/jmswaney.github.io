@@ -1,42 +1,36 @@
 <template>
-  <v-row justify="center">
-    <v-col cols="auto">
-      <v-card
-        v-if="profile"
-        flat
-        max-width="500"
-        style="margin-top: -32px"
-      >
-        <v-card-title class="text-h5 font-weight-light">
-          {{ profile.title }}
-        </v-card-title>
-        <v-card-subtitle class="text-body-1">{{
-          profile.description
-        }}</v-card-subtitle>
-        <v-card-text>
-          <!-- Education -->
-          <h1 class="pb-3 text-h6 font-weight-light">Education</h1>
-          <div v-for="entry in profile.education" :key="entry.school">
-            <h1 class="text-body-2">{{ entry.level }} in {{ entry.field }}</h1>
-            <h1 class="pb-3 text-body-2 font-weight-medium">
-              {{ entry.school }}, {{ entry.year }}
-            </h1>
-          </div>
-          <!-- Experience -->
-          <h1 class="pb-3 text-h6 font-weight-light">Experience</h1>
-          <div v-for="entry in profile.experience" :key="entry.company">
-            <h1 class="text-body-2">{{ entry.role }}</h1>
-            <h1 class="text-body-2 font-weight-medium">
-              {{ entry.company }}
-            </h1>
-            <h1 class="pb-3 text-body-2">
-              {{ entry.start }} - {{ entry.end || 'Present' }}
-            </h1>
-          </div>
-        </v-card-text>
-      </v-card>
-    </v-col>
-  </v-row>
+  <div
+    v-if="profile"
+    flat
+    max-width="500"
+    style="margin-top: -32px"
+  >
+    <h1>
+      {{ profile.title }}
+    </h1>
+    <p>
+      {{ profile.description }}
+    </p>
+    <!-- Education -->
+    <h1 class="pb-3 text-h6 font-weight-light">Education</h1>
+    <div v-for="entry in profile.education" :key="entry.school">
+      <h1 class="text-body-2">{{ entry.level }} in {{ entry.field }}</h1>
+      <h1 class="pb-3 text-body-2 font-weight-medium">
+        {{ entry.school }}, {{ entry.year }}
+      </h1>
+    </div>
+    <!-- Experience -->
+    <h1 class="pb-3 text-h6 font-weight-light">Experience</h1>
+    <div v-for="entry in profile.experience" :key="entry.company">
+      <h1 class="text-body-2">{{ entry.role }}</h1>
+      <h1 class="text-body-2 font-weight-medium">
+        {{ entry.company }}
+      </h1>
+      <h1 class="pb-3 text-body-2">
+        {{ entry.start }} - {{ entry.end || 'Present' }}
+      </h1>
+    </div>
+  </div>
 </template>
 
 <script setup lang="ts">

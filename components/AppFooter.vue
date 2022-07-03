@@ -1,15 +1,14 @@
 <template>
   <div>
-    <v-footer>
-      <v-card
+    <footer>
+      <div
         flat
         tile
         light
         width="100%"
         class="text-center"
       >
-        <v-card-text>
-          <v-btn
+          <div
             v-for="(socialBtn, idx) in socialBtns"
             :key="idx"
             icon
@@ -18,12 +17,13 @@
             rel="noopener noreferrer"
             class="mx-2 button-hover"
           >
-            <v-icon size="24px">{{ socialBtn.icon }}</v-icon>
-          </v-btn>
-        </v-card-text>
-        <v-card-text> &copy; {{ new Date().getFullYear() }} </v-card-text>
-      </v-card>
-    </v-footer>
+            <!-- <v-icon size="24px">{{ socialBtn.icon }}</v-icon> -->
+            
+            <i class="mdi"  :class="socialBtn.icon" />
+          </div>
+          &copy; {{ new Date().getFullYear() }}
+      </div>
+    </footer>
   </div>
 </template>
 

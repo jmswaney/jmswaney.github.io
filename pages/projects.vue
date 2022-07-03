@@ -1,10 +1,10 @@
 <template>
-  <v-row justify="center" style="margin-top: -192px" class="py-0">
-    <v-col cols="auto">
+  <div>
+    <div>
       <project-card path="projects/scout" />
-    </v-col>
-    <v-col cols="auto">
+    </div>
+    <div>
       <project-card path="projects/sample-manager" />
-    </v-col>
-  </v-row>
+    </div>
+  </div>
 </template>

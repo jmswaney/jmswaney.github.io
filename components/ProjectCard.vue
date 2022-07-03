@@ -1,28 +1,22 @@
 <template>
-  <v-card v-if="project" flat max-width="360" class="mx-2 transparent">
-    <v-img
+  <div v-if="project">
+    <img
       v-if="project.image !== undefined"
-      width="100%"
-      max-height="200"
       :src="project.image.src"
-      :lazy-src="project.image.lazySrc || ''"
-      class="mx-auto"
+      alt="project-img"
     >
-    </v-img>
-    <v-card-title class="headline pb-0">
+    <h2 class="headline pb-0">
       {{ project.title }}
-    </v-card-title>
-    <v-card-text class="">
-      <!-- <nuxt-content :document="project"></nuxt-content> -->
-      <template v-for="link of project.links" :key="link.name">
-        <v-icon >{{ link.icon }}</v-icon>
-        <a :href="link.href" target="_blank">
-          {{ link.name }}
-        </a>
-        <br />
-      </template>
-    </v-card-text>
-  </v-card>
+    </h2>
+    <!-- <nuxt-content :document="project"></nuxt-content> -->
+    <template v-for="link of project.links" :key="link.name">
+      <i class="mdi" :class="link.icon" />
+      <a :href="link.href" target="_blank">
+        {{ link.name }}
+      </a>
+      <br />
+    </template>
+  </div>
 </template>
 
 <script setup lang="ts">

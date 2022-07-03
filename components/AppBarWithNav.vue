@@ -1,30 +1,19 @@
 <template>
-  <div class="grey lighten-4">
+  <div>
     <div class="diagonal-box-top bg"></div>
     <!-- Top Toolbar -->
-    <v-app-bar color="indigo" flat dark app dense scroll-threshold="128">
-      <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
-      <v-spacer></v-spacer>
-      <v-btn
+    <div>
+      <div
         v-for="item in items"
         :key="item.name"
         text
         class="text-capitalize hidden-sm-and-down mx-1"
         :href="item.href"
-        >{{ item.name }}</v-btn
-      >
-    </v-app-bar>
-    <!-- Nav Drawer -->
-    <v-navigation-drawer v-model="drawer" temporary app>
-      <v-list nav dense>
-        
-          <v-list-item v-for="item in items" :key="item.name" :href="item.href">
-            <v-icon left>{{ item.icon }}</v-icon>
-            <v-list-item-title>{{ item.name }}</v-list-item-title>
-          </v-list-item>
-        
-      </v-list>
-    </v-navigation-drawer>
+        >
+          <i class="mdi" :class="item.icon" />
+          {{ item.name }}
+        </div>
+    </div>
   </div>
 </template>
 
