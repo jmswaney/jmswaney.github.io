@@ -1,17 +1,17 @@
 <template>
   <div>
-    <footer>
-      <div>
-        <div
-          v-for="(socialBtn, idx) in socialBtns"
-          :key="idx"
-          target="_blank"
-          rel="noopener noreferrer"
-        >        
-          <i class="mdi" :class="socialBtn.icon" />
-        </div>
-        &copy; {{ new Date().getFullYear() }}
+    <footer class="">
+      <div
+        v-for="(socialBtn, idx) in socialBtns"
+        :key="idx"
+        target="_blank"
+        rel="noopener noreferrer"
+      >        
+        <i class="mdi" :class="socialBtn.icon" />
       </div>
+      <p>
+        &copy; {{ new Date().getFullYear() }}
+      </p>
     </footer>
   </div>
 </template>

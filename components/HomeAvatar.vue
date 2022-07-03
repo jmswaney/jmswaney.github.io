@@ -1,5 +1,5 @@
 <template>
-  <header class="flex flex-col items-center gap-4">
+  <div class="flex flex-col items-center gap-4">
     <div class="rounded-full overflow-hidden w-64 drop-shadow-lg">
       <img src="/images/profile/profile.jpg" alt="profile-photo"/>
     </div>
@@ -16,5 +16,5 @@
         <i class="mdi mdi-flask" />
       </p>
     </div>
-  </header>
+  </div>
 </template>
