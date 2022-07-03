@@ -1,16 +1,15 @@
 <template>
-  <div>
+  <div class="flex flex-col w-1/2 justify-center justify-items-center">
     <img src="/images/profile/profile.jpg" alt="profile-photo"/>
     <h1>
-      <span class="font-weight-light">Justin </span>
-      <span class="indigo--text">Swaney</span>
+      Justin Swaney
     </h1>
     <p>
       <em>Scientist, Developer, Engineer</em>
       <br />
-      <!-- <v-icon color="indigo lighten-2" class="px-5">mdi-microscope</v-icon> -->
-      <!-- <v-icon color="indigo lighten-2" class="px-5">mdi-laptop</v-icon> -->
-      <!-- <v-icon color="indigo lighten-2" class="px-5">mdi-flask</v-icon> -->
+      <i class="mdi mdi-microscope" />
+      <i class="mdi mdi-laptop" />
+      <i class="mdi mdi-flask" />
     </p>
   </div>
 </template>

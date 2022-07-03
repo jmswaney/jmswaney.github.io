@@ -1,13 +1,12 @@
 <template>
   <div>
-    <div class="diagonal-box-top bg"></div>
+    <!-- <div class="diagonal-box-top bg"></div> -->
     <!-- Top Toolbar -->
     <div>
       <div
         v-for="item in items"
         :key="item.name"
         text
-        class="text-capitalize hidden-sm-and-down mx-1"
         :href="item.href"
         >
           <i class="mdi" :class="item.icon" />
