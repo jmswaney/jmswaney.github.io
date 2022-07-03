@@ -1,12 +1,11 @@
 <template>
-  <div class="flex flex-col w-1/2 justify-center justify-items-center">
+  <div class="flex flex-col items-center">
     <img src="/images/profile/profile.jpg" alt="profile-photo"/>
-    <h1>
+    <h1 class="flex">
       Justin Swaney
     </h1>
+    <em>Scientist, Developer, Engineer</em>
     <p>
-      <em>Scientist, Developer, Engineer</em>
-      <br />
       <i class="mdi mdi-microscope" />
       <i class="mdi mdi-laptop" />
       <i class="mdi mdi-flask" />

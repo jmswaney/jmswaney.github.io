@@ -1,9 +1,7 @@
 <template>
   <div>
     <HomeAvatar />
-    <div>
-      <ContentDoc />
-    </div>
+    <ContentDoc />
   </div>
 </template>
 

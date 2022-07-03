@@ -1,7 +1,7 @@
 <template>
   <div>
     <AppBarWithNav />
-    <div class="flex flex-col">
+    <div>
       <slot />
     </div>
     <AppFooter />
