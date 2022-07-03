@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <AppBarWithNav />
-      <v-main class="grey lighten-4">
+      <v-main>
         <slot />
       </v-main>
     <AppFooter />

@@ -7,7 +7,7 @@ export default defineNuxtConfig({
   build: {
     transpile: ['vuetify']
   },
-  css: ['vuetify/lib/styles/main.sass'],
+  css: ['vuetify/lib/styles/main.sass', 'mdi/css/materialdesignicons.min.css'],
   content: {
     documentDriven: true
   },

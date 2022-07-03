@@ -15,7 +15,7 @@
       >
     </v-app-bar>
     <!-- Nav Drawer -->
-    <v-navigation-drawer v-model="drawer" temporary app color="grey lighten-4">
+    <v-navigation-drawer v-model="drawer" temporary app>
       <v-list nav dense>
         
           <v-list-item v-for="item in items" :key="item.name" :href="item.href">

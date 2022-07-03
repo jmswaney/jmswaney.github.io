@@ -5,7 +5,6 @@
         v-if="profile"
         flat
         max-width="500"
-        color="grey lighten-4"
         style="margin-top: -32px"
       >
         <v-card-title class="text-h5 font-weight-light">
