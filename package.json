@@ -12,6 +12,7 @@
     "nuxt": "^3.0.0-rc.4"
   },
   "dependencies": {
+    "@tailwindcss/typography": "^0.5.2",
     "mdi": "^2.2.43"
   }
 }

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="-mt-44">
     <HomeAvatar />
     <ContentDoc />
   </div>

@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-8">
+  <div>
     <AppBarWithNav />
     <div>
       <slot />
