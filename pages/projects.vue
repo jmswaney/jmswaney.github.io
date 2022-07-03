@@ -8,12 +8,3 @@
     </v-col>
   </v-row>
 </template>
-
-<script lang="ts">
-import { defineComponent } from '@nuxtjs/composition-api'
-import ProjectCard from './ProjectCard.vue'
-
-export default defineComponent({
-  components: { ProjectCard },
-})
-</script>

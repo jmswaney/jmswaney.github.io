@@ -17,53 +17,45 @@
     <!-- Nav Drawer -->
     <v-navigation-drawer v-model="drawer" temporary app color="grey lighten-4">
       <v-list nav dense>
-        <v-list-item-group v-model="group" active-class="indigo--text">
+        
           <v-list-item v-for="item in items" :key="item.name" :href="item.href">
             <v-icon left>{{ item.icon }}</v-icon>
             <v-list-item-title>{{ item.name }}</v-list-item-title>
           </v-list-item>
-        </v-list-item-group>
+        
       </v-list>
     </v-navigation-drawer>
   </div>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      drawer: false,
-      group: null,
-      items: [
-        {
-          name: 'About',
-          icon: 'mdi-home',
-          href: '/',
-        },
-        {
-          name: 'Profile',
-          icon: 'mdi-account',
-          href: '/profile',
-        },
-        {
-          name: 'Projects',
-          icon: 'mdi-folder',
-          href: '/projects',
-        },
-        {
-          name: 'Blog',
-          icon: 'mdi-post',
-          href: 'https://blog.jmswaney.com',
-        },
-      ],
-    }
+<script setup>
+const drawer = ref(false);
+const group = ref();
+const items = [
+  {
+    name: 'About',
+    icon: 'mdi-home',
+    href: '/',
   },
-  watch: {
-    group() {
-      this.drawer = false
-    },
+  {
+    name: 'Profile',
+    icon: 'mdi-account',
+    href: '/profile',
   },
-}
+  {
+    name: 'Projects',
+    icon: 'mdi-folder',
+    href: '/projects',
+  },
+  {
+    name: 'Blog',
+    icon: 'mdi-post',
+    href: 'https://blog.jmswaney.com',
+  },
+]
+watch(group, () => {
+  drawer.value = false;
+})
 </script>
 
 <style scoped>

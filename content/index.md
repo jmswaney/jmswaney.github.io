@@ -1,5 +1,5 @@
 ---
-title: About Page
+title: jmswaney - Home
 description: 'A short about me page'
 ---
 

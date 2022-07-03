@@ -2,6 +2,7 @@
   <v-row justify="center">
     <v-col cols="auto">
       <v-card
+        v-if="profile"
         flat
         max-width="500"
         color="grey lighten-4"
@@ -39,10 +40,7 @@
   </v-row>
 </template>
 
-<script lang="ts">
-import { defineComponent } from '@nuxtjs/composition-api'
-import useContent from '~/composition/useContent'
-
+<script setup lang="ts">
 interface Education {
   level: string
   field: string
@@ -70,10 +68,5 @@ interface Profile {
   }
 }
 
-export default defineComponent({
-  setup() {
-    const { data: profile } = useContent<Profile>('profile')
-    return { profile }
-  },
-})
+const { page: profile } = useContent();
 </script>

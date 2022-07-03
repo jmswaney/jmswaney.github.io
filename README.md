@@ -1,33 +1,42 @@
-# Personal Site
+# Content v2 Minimal Starter
 
-Personal website for Justin Swaney, hosted at [jmswaney.com](https://www.jmswaney.com)
+Look at the [Content documentation](https://content-v2.nuxtjs.org/) to learn more.
 
-## Build Setup
+## Setup
 
-```bash
-# install dependencies
-$ yarn install
-
-# serve with hot reload at localhost:3000
-$ yarn dev
-
-# build for production and launch server
-$ yarn build
-$ yarn start
-
-# generate static project
-$ yarn generate
-```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
-
-## Run Tests
+Make sure to install the dependencies:
 
 ```bash
-# Run jest on test/
-yarn test
+# yarn
+yarn install
+
+# npm
+npm install
+
+# pnpm
+pnpm install --shamefully-hoist
 ```
 
-## Deployment
+## Development Server
 
-Checkout `.github/ci.yml` for automated deployment on changes to `master` branch. Uses `peaceiris/actions-gh-pages@v3` to move `dist/` folder to the `gh-pages` branch (where GitHub is configured to serve the static site from).
+Start the development server on http://localhost:3000
+
+```bash
+npm run dev
+```
+
+## Production
+
+Build the application for production:
+
+```bash
+npm run build
+```
+
+Locally preview production build:
+
+```bash
+npm run preview
+```
+
+Checkout the [deployment documentation](https://v3.nuxtjs.org/docs/deployment) for more information.

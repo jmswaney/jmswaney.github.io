@@ -28,19 +28,13 @@
   </div>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      socialBtns: [
-        { icon: 'mdi-twitter', href: 'https://twitter.com/justinmswaney' },
-        { icon: 'mdi-linkedin', href: 'https://www.linkedin.com/in/jmswaney/' },
-        { icon: 'mdi-instagram', href: 'https://www.instagram.com/jswaymusic' },
-        { icon: 'mdi-github', href: 'https://github.com/jmswaney' },
-      ],
-    }
-  },
-}
+<script setup>
+const socialBtns = [
+  { icon: 'mdi-twitter', href: 'https://twitter.com/justinmswaney' },
+  { icon: 'mdi-linkedin', href: 'https://www.linkedin.com/in/jmswaney/' },
+  { icon: 'mdi-instagram', href: 'https://www.instagram.com/jswaymusic' },
+  { icon: 'mdi-github', href: 'https://github.com/jmswaney' },
+]
 </script>
 
 <style scoped>

@@ -1,5 +1,17 @@
-<script>
-import About from './about'
+<template>
+  <v-container justify="center">
+    <HomeAvatar />
+    <v-card flat class="pa-2 mx-auto" max-width="500px" color="grey lighten-4">
+      <ContentDoc />
+    </v-card>
+  </v-container>
+</template>
 
-export default About
+<script setup lang="ts">
+interface About {
+  title: string
+  description: string
+}
+
+// const { page: about } = useContent()
 </script>
