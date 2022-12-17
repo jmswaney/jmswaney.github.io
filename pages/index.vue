@@ -1,8 +1,6 @@
 <template>
-  <div class="-mt-44">
-    <HomeAvatar />
-    <ContentDoc />
-  </div>
+  <HomeAvatar />
+  <ContentDoc />
 </template>
 
 <script setup lang="ts">

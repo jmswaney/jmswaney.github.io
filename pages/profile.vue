@@ -3,7 +3,6 @@
     v-if="profile"
     flat
     max-width="500"
-    style="margin-top: -32px"
   >
     <h1>
       {{ profile.title }}

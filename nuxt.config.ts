@@ -1,10 +1,12 @@
-import { defineNuxtConfig } from 'nuxt'
+// import { defineNuxtConfig } from 'nuxt'
 import tailwindTypography from '@tailwindcss/typography'
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
-export default defineNuxtConfig({
+export default {
   modules: ['@nuxt/content', '@nuxtjs/tailwindcss'],
-  build: {},
+  build: {
+    transpile: ["vuetify"]
+  },
   css: ['mdi/css/materialdesignicons.min.css'],
   content: {
     documentDriven: true
@@ -14,4 +16,4 @@ export default defineNuxtConfig({
       plugins: [tailwindTypography]
     }
   }
-})
+}
